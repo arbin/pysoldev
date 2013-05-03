@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+{% spaceless %}
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html dir="ltr" lang="en-US"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Pysoldev - We help solve.</title>
+	<meta name="description" content="Python/Django Solutions Development">
+	<meta name="keywords" content="python, django, web application">
+	<!-- Google Web Fonts
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:700|Bree+Serif|Muli' rel='stylesheet' type='text/css'>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS Stylesheets
+  ================================================== -->
+	<link rel="stylesheet" href="{{ MEDIA_URL }}/css/resets.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}/css/media-queries.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}/css/prettyPhoto.css" type="text/css" media="screen"/> <!-- Image Gallery -->
+	<!--[if lt IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="{{ MEDIA_URL }}/js/selectivizr.min.js"></script>
+	<![endif]-->
+	<!-- Javascript
+  ================================================== -->
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+	<!-- <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+	<!-- <script src="assets/js/supersized.js"></script> -->
+	<script src="{{ MEDIA_URL }}/js/tweet.js"></script>
+	<script src="{{ MEDIA_URL }}/js/countdown.min.js"></script>
+	<script src="{{ MEDIA_URL }}/js/prettyphoto.js"></script>
+	<style>
+
+		#head  {
+			background:url('{{ MEDIA_URL }}/img/slider/9.jpg');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+
+		::-moz-selection{background:#a5dc4f;color:#fff;text-shadow:none}
+		::selection{background:#a5dc4f;color:#fff;text-shadow:none}
+
+		.logotext.square:hover h1,
+		.logotext.oval:hover h1 {
+			background:#a5dc4f;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+
+
+	</style>
+
+</head>
+<body>
+			{% if messages %}
+                <ul class="messages" id="submitted">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                            {% autoescape off %}
+                                {{ message }}
+                            {% endautoescape %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+	<header id="head">
+
+		<div class="inner">
+			<a href="#" class="logotext transparent"><h1>Pysoldev</h1></a>
+			<div class="details left">
+
+				<div class="message">
+					<!-- Fading text. See core.js for list of words. -->
+					<p class="large">We're the X of <span id="words"></span></p>
+
+					<!-- Static text -->
+					<p class="medium">We’re a small group of software engineers, web designers and entrepreneurs committed to help solve problems.</p>
+				</div>
+				<div class="menu right">
+					<div id="menuContainer">
+						<div class="menus">
+							<a href="/">Home</a> | <a href="#apps">Apps</a> | <a href="#team">The Team</a> | <a href="#technology">Technology</a> | <a href="#contact">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				{% block yield %}{% endblock %}
+
+				<ul class="social">
+					<li class="twitter"><a href="http://twitter.com/pysoldev">Twitter</a></li>
+					<li class="facebook"><a href="http://www.facebook.com/pysoldev">Facebook</a></li>
+					<li class="vimeo"><a href="http://vimeo.com/user3665971">Vimeo</a></li>
+					<li class="linkedin"><a href="http://www.linkedin.com/company/1217355">Linkedin</a></li>
+				</ul>
+
+				<div class="tweet"></div>
+
+				<div class="copyright">
+					&copy; 2013 Pysoldev LLC. All Rights Reserved. | Powered by <a href="https://www.djangoproject.com/" >Django</a>
+                     Source code of this website is available on <a href="https://github.com/arbin/pysoldev" target="_blank">GitHub</a>.
+				</div>
+
+		</div>
+	</section>
+	
+	<script src="{{ MEDIA_URL }}/js/core.js?asdasdasd"></script>
+	
+</body>
+</html>
+{% endspaceless %}

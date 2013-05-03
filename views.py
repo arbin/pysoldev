@@ -12,9 +12,12 @@ def home(request):
 
         email = EmailMessage(subject, message, sender, recipient)
         email.send()
-        
+
         messages.success(request, "<h1>You message is on it's way!</h1> <p>No "
-                                  "actual ponies were harmed in the sending "
+                                  "actual tarsiers were harmed in the sending "
                                   "of this message.</p>")
 
-    return TemplateResponse(request, 'index.html', None)
+    return TemplateResponse(request, 'home.html', None)
+
+def arbin(request):
+    return TemplateResponse(request, 'arbin.html', None)
