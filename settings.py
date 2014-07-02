@@ -1,4 +1,3 @@
-# Django settings for pysoldev project.
 import os
 from os import path
 
@@ -52,9 +51,9 @@ MEDIA_ROOT = os.path.join(path.dirname(__file__), 'media')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = 'http://localhost:8002/media'
+MEDIA_URL = '/media/'
 
-ADMIN_MEDIA_PREFIX = 'http://localhost:8002/media'
+ADMIN_MEDIA_PREFIX = '/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -71,7 +70,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "C:/Python27/Django-1.4/django/bin/pysoldev/pysoldev/templates",
+    os.path.join(os.path.normpath("%s/../" % os.path.dirname(__file__)), 'templates'),
 
 
 )
@@ -100,8 +99,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # Uncomment the next line for simple clickjacking protection:
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'pysoldev.urls'
@@ -113,7 +111,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "C:/Python27/Django-1.4/django/bin/pysoldev/pysoldev/templates",
+    os.path.join(os.path.normpath("%s/../" % os.path.dirname(__file__)), 'templates'),
 
 )
 
@@ -125,8 +123,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
     'pysoldev.app',
 )
 
