@@ -1,3 +1,4 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from socialregistration.contrib.facebook.models import FacebookProfile
@@ -8,6 +9,8 @@ from socialregistration.contrib.linkedin.models import LinkedInProfile
 from socialregistration.contrib.openid.models import OpenIDProfile
 from socialregistration.contrib.tumblr.models import TumblrProfile
 from socialregistration.contrib.twitter.models import TwitterProfile
+
+from django.http import HttpResponse
 
 class Facebook(object):
     def __init__(self, user=None):

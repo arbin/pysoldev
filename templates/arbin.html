@@ -9,7 +9,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Arbin Bulaybulay</title>
+	<title>Python/Django Software Engineer, Web Developer - Arbin Bulaybulay</title>
 	<meta name="description" content="Arbin Bulaybulay - Software Engineer, Singer-Songwriter, Footballer, Chef" />
 
 	<!-- Google Web Fonts
@@ -68,7 +68,9 @@
 				<div class="message">
 
 					<!-- Static text -->
-					<p class="medium">Software Engineer, Singer-Songwriter, Footballer, Chef</p>
+					<p class="medium">Full-Stack Software Engineer, Singer-Songwriter, Footballer and Chef.</p>
+                                        <p class="small">Take a moment to visit my <a href="http://pysoldev.com/blog">Blog</a>.
+                                        <a href="http://pysoldev.com/en/Arbin_Bulaybulay_Experienced_Python_Django_Software_Engineer.pdf"> My Resume </a></p>
 					
 				</div>
 
@@ -91,9 +93,35 @@
 
 	<section class="body">
 		<div class="inner">
-
 				<div id="extra">
 
+                                        <div class="block">
+                                           <h2 class="heading"><span class="left"><strong>Summary of Qualifications</strong></span></h2>
+						<p class="small">
+	<ul>
+		<li>- Processing department head, mentoring more than 30 controllers and logistics staffs for more than 4 years.</li>
+		<li>- Experienced in project management that help reduced OPEX and shorten processes by eliminating non-value added tasks.</li>
+		<li>- Application development including developing web based archiving/indexing systems for electronic data and printed materials. </li>
+		<li>- Designed, developed and documented 4 cost-saving SIX SIGMA project initiatives. </li>
+		<li>- Have authored of Production’s Risk Treatment Plan and Business Continuity Plan. </li>
+		<li>- Possess expertise in SDLC, Agile, Object-Oriented Analysis/Design, skilled at progressing from problem statement to well-documented designs.</li>
+		<li>- Exceptionally strong sense of aesthetics and attention to details. </li>
+		<li>- Excellent problem-solving skills and proven written, oral and presentation skills. </li>
+		<li>- Drive for continuous improvement in service delivery. SIX SIGMA Green Belt Internal. </li>
+		<li>- Cutting-edge technology developer. </li>
+		<li>- Excellent communication skills and stakeholder relations.</li>
+		<li>- Proactive, resourceful, flexible, creative, passionate, focused, and versatile.</li>
+		<li>- A technical lead in a technology company with a team of 4 engineers.</li>
+		<li>- My passion is creating high quality, custom products. And I do it well.</li> 
+	<ul>
+                                                </p>
+                                        </div>
+					<div class="block">
+                                           <h2 class="heading"><span class="left"><strong>My Stack</strong></span></h2>
+						<p class="small">
+Python, Django, MySQL, PostgreSQL, Git, SVN, jQuery, Javascript, Bootstrap, CSS3, HTML5, Linux/Unix, Agile, Social Media APIs(Facebook, Twitter, Linkedin and Flickr)
+                                                </p>
+                                        </div>
 					<div class="block">
 						<h2 class="heading"><span class="left"><strong>My Portfolio</strong></span></h2>
 						<p class="small">Web Apps built using Python/Django, MySql, SQLite, HTML5, CSS3, jQuery, Javascript.</p>
@@ -102,10 +130,67 @@
 							<li>
 								<div class="hexagon"><span class="time"></span></div>
 								<p>
-									<strong>QRCoder</strong>
+									<strong><a href="http://qrcoder.pysoldev.com">QRCoder</a></strong>
 									FREE QR Code generator.
 								</p>
 							</li>
+							<li>
+								<div class="hexagon"><span class="time"></span></div>
+								<p>
+									<strong><a href="http://qrcodemaker.co">QR Code Generator</a></strong>
+									FREE QR Code generator.
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="time"></span></div>
+								<p>
+									<strong><a href="http://aloeveraofforever.com">Aloe Vera of Forever</a></strong>
+									Affiliate Apps, Calculators Apps and more.
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="time"></span></div>
+								<p>
+									<strong><a href="http://pysoldev.com">Pysoldev</a></strong>
+									Pysoldev website.
+								</p>
+							</li>
+                                                 </ul>
+                                         </div>
+                                         <div class="block">
+                                         	<h2 class="heading"><span class="left"><strong>Projects Contributed Into</strong></span></h2>
+                                         	<p class="small">Web Apps built using Python/Django, Postgresql, HTML5, CSS3, jQuery, Javascript.</p>
+                                         	<ul class="features">
+							<li>
+								<div class="hexagon"><span class="project"></span></div>
+								<p>
+									<strong>Royalorchard</strong>
+									Python/Django Hotel Booking and Reports
+								</p>
+							</li>
+							<li>
+								<div class="hexagon"><span class="idea"></span></div>
+								<p>
+									<strong>FBYC</strong>
+									Python/Django Blog and Reports
+									
+								</p>
+							</li>
+							<li>
+								<div class="hexagon"><span class="idea"></span></div>
+								<p>
+									<strong>Sayah</strong>
+									Python/Django Survey Site
+									
+								</p>
+							</li>
+						</ul>
+                                         </div>
+                                         <div class="block">
+						<h2 class="heading"><span class="left"><strong>Coming Apps</strong></span></h2>
+						
+
+						<ul class="features">
 							<li>
 								<div class="hexagon"><span class="stats"></span></div>
 								<p>
@@ -134,52 +219,39 @@
 
 						<h2 class="heading"><span class="left"><strong>Contact me</strong></span></h2>
 
-						<form class="contact" id="contact">
-
+						<form class="contact" id="contact" action="{% url home %}" method="post">{% csrf_token %}
+							
 								<div class="form">
-									<input type="text" name="name" placeholder="Name" id="contactname" />
-									<input type="text" name="email" placeholder="Email" id="contactemail" />
-									<textarea name="message" placeholder="Message" id="contactmessage"></textarea>
+									<textarea name="message" placeholder="Type your email address and message" id="contactmessage"></textarea>
 									<button>Contact</button>
 								</div>
 
 								<ul>
 									<li class="phone"><span>Phone:</span> +639066608271</li>
-									<li class="email"><span>Email:</span> <a href="mailto:arbin@pysoldev.com">arbin@pysoldev.com</a></li>
-								</ul>
+                                                              
+                                                              
+									<li class="email"><span>Email:</span><a href="mailto:arbin@pysoldev.com">arbin@pysoldev.com</a></li>
+                                                                        <li class="address"><span>Address:</span>Canlas Subd., Colon Ext., Dumaguete City, Philippines</li>
+					                        </ul>			
 						</form>
 					</div>
 
-					<div class="block">
-						<h2 class="heading"><span class="right"><strong>Image Gallery</strong></span></h2>
-						<ul class="gallery">
-							<li><a href="/img/slider/1.jpg" rel="prettyPhoto[gallery]"><img src="img/slider/3.jpg" /></a></li>
-							<li><a href="/img/slider/2.jpg" rel="prettyPhoto[gallery]"><img src="img/slider/2.jpg" /></a></li>
-							<li><a href="/img/slider/3.jpg" rel="prettyPhoto[gallery]"><img src="img/slider/3.jpg" /></a></li>
-							<li><a href="/img/slider/4.jpg" rel="prettyPhoto[gallery]"><img src="img/slider/2.jpg" /></a></li>
-							<li><a href="/img/slider/5.jpg" rel="prettyPhoto[gallery]"><img src="img/slider/3.jpg" /></a></li>
-							<li><a href="/img/slider/2.jpg" rel="prettyPhoto[gallery]"><img src="img/slider/2.jpg" /></a></li>
-						</ul>
-					</div>
-
 					
-
 				</div>
-
+                                <h2 class="heading"><span class="left"><strong>I'm sociable.. Connect with me.</strong></span></h2>
 				<ul class="social">
-					<li class="twitter"><a href="#">Twitter</a></li>
-					<li class="facebook"><a href="#">Facebook</a></li>
-					<li class="vimeo"><a href="#">Vimeo</a></li>
-					<li class="skype"><a href="#">skype</a></li>
-					<li class="git"><a href="#">Git</a></li>
-					<li class="linkedin"><a href="#">Linkedin</a></li>
-					<li class="youtube"><a href="#">Youtube</a></li>
+					<li class="twitter"><a href="http://twitter.com/arbinbulaybulay">Twitter</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/noy.bulay">Facebook</a></li>
+					<li class="vimeo"><a href="http://vimeo.com/50181848">Vimeo</a></li>
+					<li class="git"><a href="http://github.com/arbin">Git</a></li>
+					<li class="linkedin"><a href="http://ph.linkedin.com/in/arbinbulaybulay">Linkedin</a></li>
+					<li class="youtube"><a href="http://youtube.com/arbinobjerg">Youtube</a></li>
 				</ul>
 
 				<div class="tweet"></div>
 
 				<div class="copyright">
-					<p>&copy; 2013 <a href="http://pysoldev.com/arbin">Arbin Bulaybulay</a>.</p>
+					<p>&copy; {% now "Y" %} <a href="http://arbin.pysoldev.com">Arbin Bulaybulay</a>. Built on top of <a href="https://www.djangoproject.com/" >Django </a>.</p>
 				</div>
 
 		</div>

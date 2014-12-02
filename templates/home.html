@@ -1,175 +1,153 @@
 {% extends "base.html" %}
 {% block yield %}
 				<div id="extra">
-					<div class="block" id="apps">
-						<h2 class="heading"><span class="left"><strong>Apps Coming Soon</strong></span></h2>
-						<p class="small">We're committed to develop apps that are useful and that will solve your problem.</p>
+					<div class="block" id="about">
+						<h2 class="heading"><span class="left"><strong>About Us</strong></span></h2>
+						<p class="small">Pysoldev is a web development shop in the Philippines, specializing Python/Django as main development tool.  We provide full-stack software engineers to cater your needs from small to large scale projects, consultation, project analysis, design and development and even project maintenance.  We are experts in our domain, utilizing current technologies for your advantage.</p>
 
-						<ul class="features">
-							<li>
-								<div class="hexagon"><span class="time"></span></div>
-								<p>
-									<strong>Spaally</strong>
-									A mobile spa booker and queuer.
-								</p>
-							</li>
-							<li>
-								<div class="hexagon"><span class="stats"></span></div>
-								<p>
-									<strong>Jobscited</strong>
-									A social recruitment platform for hiring managers to hire fast, save time and money.
-								</p>
-							</li>
-							<li>
-								<div class="hexagon"><span class="idea"></span></div>
-								<p>
-									<strong>Holisticab</strong>
-									A simple collection of alternative medicine.
-								</p>
-							</li>
-							<li>
-								<div class="hexagon"><span class="idea"></span></div>
-								<p>
-									<strong>eCertificateGift</strong>
-									Electronic Gift Certificate Maker
-								</p>
-							</li>
-							<li>
-								<div class="hexagon"><span class="edit"></span></div>
-								<p>
-									<strong><a href="http://qrcoder.pysoldev.com">QRCoder</a></strong>
-									A QR coder for everyday use.
-								</p>
-							</li>
-							<li>
-								<div class="hexagon"><span class="comments"></span></div>
-								<p>
-									<strong>CardsMachine</strong>
-									Simple card creator for discount card, ID cards, business cards, VIP cards.
-								</p>
-							</li>
-							<li>
-								<div class="hexagon"><span class="comments"></span></div>
-								<p>
-									<strong>PosterFaster</strong>
-									Simple poster creator for home, school and business use.
-								</p>
-							</li>
+						
+					</div>
+                                        <div class="block">
+						<h2 class="heading"><span class="left"><strong>Why Hire a Pysoldev Engineer?</strong></span></h2>
+
+						<ul>
+							<li><strong>- Python and Django experts and talented software engineers</strong></li>
+                                                        <li><strong>- Best practices with PEP8 and Code review</strong></li>
+                                                        <li><strong>- Agile software development methodology</strong></li>
+                                                        <li><strong>- Flexible working schedule</strong></li>
+                                                        <li><strong>- We are good communicator, we speak excellent english</strong></li>
+                                                        <li><strong>- Quality and reasonable price performance </strong></li>							
+						</ul>
+					</div>
+                                        
+					<div class="block" id="apps">
+						<h2 class="heading"><span class="left"><strong>Services</strong></span></h2>
+						<p class="small">We're committed to develop apps the way you want it. Our passion is creating high quality, custom products. And we do it well.</p>
+
+						<ul>
+							<li><strong>- Custom Web Application Development</strong></li>
+                                                        <li><strong>- Web Design and User Experience</strong></li>
+                                                        <li><strong>- Web Application Support and Maintenance</strong></li>
+                                                        <li><strong>- Consultancy</strong></li>
+                                                        <li><strong>- Optimization</strong></li>
+                                                        <li><strong>- Code Review, Refactoring and Cleaning Code</strong></li>
+                                                        <li><strong>- Systems Administration</strong></li>							
+						</ul>
+					</div>
+					
+                                        <div class="block" id="portfolio">
+						<h2 class="heading"><span class="left"><strong>Portfolio</strong></span></h2>
+						<p class="small">Apps to help your work more effective and efficient</p>
+
+						<ul>
+                                                        <li><strong><a href="http://aloeveraofforever.com">Aloe Vera of Forever</a></strong></li>
+							<li><strong><a href="http://qrcodemaker.co">QR Code Maker</a> (In Progress)</strong></li>
+                                                        <li><strong><a href="http://jobscited.com">Jobscited </a>(In Progress)</strong></li>
+                                                        						
 						</ul>
 					</div>
 
-
-
-					<div class="block" id="team">
+					<div class="block" id="pricing">
+						<h2 class="heading"><span class="left"><strong>Pricing</strong></span></h2>
+						<p class="small">We provide our consultancy services at a flat hourly rate of 15 USD regardless of the type of service. Payment methods include Paypal and Bank transfer.</p>
+                                        </div>
+						
+					
+                                        <div class="block" id="team">
 						<h2 class="heading"><span class="center"><strong>Meet the Team</strong></span></h2>
 						<ul class="team">
 							<li>
 								<img src="{{ MEDIA_URL }}/img/arbin.png" alt="Arbin Bulaybulay">
-								<a href="/arbin"><span class="name">Arbin Bulaybulay</span></a>
-								<span class="role">FOUNDER, CEO</span>
-<p>He who loves to bake oats cookies and create giant pizzas, occasionally play soccer during weekends, write songs and play his guitar in his up times and down times, 
-create music videos and direct a film, walking with his dogs in the morning and do painting which is his first love.</p>
+								<a href="/en/arbin"><span class="name">Arbin</span></a>
+								<span class="role"> Founder / Full-Stack Software Engineer </span>
+<p>Loves to bake oats cookies and giant pizzas, plays soccer during weekends, write songs and play his guitar, create music videos and direct a film, love dogs and painting which is his first love.</p>
 								<ul class="social">
 									<li class="twitter"><a href="http://twitter.com/arbinbulaybulay">Twitter</a></li>
+									<li class="facebook"><a href="https://www.facebook.com/noy.bulay">Facebook</a></li>
+									<li class="git"><a href="http://github.com/arbin">Git</a></li>
+                                                                        <li class="linkedin"><a href="http://ph.linkedin.com/in/arbinbulaybulay">Linkedin</a></li>
 								</ul>
 							</li>
 							<li>
-								<img src="{{ MEDIA_URL }}/img/profile_pic.png" alt="Ron Selby">
-								<span class="name">Ron Selby</span>
-								<span class="role">CO-FOUNDER, Business</span>
+								<img src="{{ MEDIA_URL }}/img/ron.png" alt="Ron Selby">
+								<span class="name">Ron</span>
+								<span class="role"> Co-Founder / Finance </span>
 								<p>Ron works as an accountant while founding Pysoldev. He loves running and nature hopping.</p>
 								<!--<ul class="social">
 									<li class="twitter"><a href="#">Twitter</a></li>
 									<li class="facebook"><a href="#">Facebook</a></li>
-									<li class="git"><a href="#">Git</a></li>
+									
 								</ul> -->
 							</li>
 							<li>
 								<img src="{{ MEDIA_URL }}/img/jerol.png" alt="Jerol Adorable">
-								<span class="name">Jerol Adorable</span>
-								<span class="role">SOFTWARE ENGINEER, TECHNOLOGY</span>
-								<p>Jerol has built web and desktop applications and has been devoting his time in learning new technologies.</p>
-								<!--<ul class="social">
-									<li class="twitter"><a href="#">Twitter</a></li>
-									<li class="git"><a href="#">Git</a></li>
-								</ul> -->
+								<span class="name">Jerol</span>
+								<span class="role">Full-Stack Software Engineer</span>
+								<p>Jerol hacked the web and desktop applications. Can be your database and a system administrator in one room.</p>
+								<ul class="social">
+									<li class="twitter"><a href="http://twitter.com/jerol2k3">Twitter</a></li>
+									<li class="facebook"><a href="https://www.facebook.com/jerol.adorable">Facebook</a></li>
+									<li class="git"><a href="http://github.com/jerol2k3">Git</a></li>
+                                                                        <li class="linkedin"><a href="http://www.linkedin.com/pub/jerol-adorable/5/904/bbb">Linkedin</a></li>
+								</ul>
 							</li>
 							<li>
-								<img src="{{ MEDIA_URL }}/img/bobby.png" alt="Bobby Maghanoy">
-								<span class="name">Bobby Maghanoy</span>
-								<span class="role">SOFTWARE ENGINEER, PRODUCTS</span>
-								<p>Bob, a software engineer who has passion in great UI/UX design.</p>
-								<!-- <ul class="social">
-									<li class="facebook"><a href="#">Facebook</a></li>
-									<li class="git"><a href="#">Git</a></li>
-								</ul> -->
+								<img src="{{ MEDIA_URL }}/img/bob.png" alt="Bobby Maghanoy">
+								<span class="name">Bobby</span>
+								<span class="role">Full-Stack Software Engineer</span>
+								<p>Bob, has great passion in UI/UX design and a database guru.</p>
+								<ul class="social">
+									<li class="twitter"><a href="http://twitter.com/centurybrains">Twitter</a></li>
+									<li class="facebook"><a href="https://www.facebook.com/bobmaghanoy">Facebook</a></li>
+                                                                        <li class="linkedin"><a href="http://www.linkedin.com/pub/bobby-mahoney/57/18a/884">Linkedin</a></li>
+								</ul>
 							</li>
 						</ul>
 						<ul class="team">	
 							<li>
-								<img src="{{ MEDIA_URL }}/img/profile_pic.png" alt="Ray Anthony C. Leong">
-								<span class="name">Ray Anthony C. Leong</span>
+								<img src="{{ MEDIA_URL }}/img/ray.png" alt="Ray Anthony C. Leong">
+								<span class="name">Ray</span>
 								<span class="role">Web Designer</span>
 								<p>Ray is an experienced web developer who contributed in an early years of Pysoldev that inspired the team to improved its design.</p>
-								<!-- <ul class="social">
-									<li class="facebook"><a href="#">Facebook</a></li>
-									<li class="git"><a href="#">Git</a></li>
-								</ul> -->
+								<ul class="social">
+                                                                        <li class="twitter"><a href="http://twitter.com/rcleong">Twitter</a></li>
+									<li class="facebook"><a href="https://www.facebook.com/rayve.leong">Facebook</a></li>
+									
+								</ul>
+							</li>	
+							<li>
+								<img src="{{ MEDIA_URL }}/img/luke.png" alt="Luke Selby">
+								<span class="name">Luke</span>
+								<span class="role">Graphics and Web Designer</span>
+								<p>Luke has won numerous award in designing and committed to great designs.</p>
+								<ul class="social">
+									<li class="facebook"><a href="https://www.facebook.com/luke.yebles">Facebook</a></li>
+									
+								</ul>
+							</li>
+							<li>
+								<img src="{{ MEDIA_URL }}/img/elai.png" alt="Prescila Culaste">
+								<span class="name">Elai</span>
+								<span class="role">Virtual Assistant - SEO and Social Media</span>
+								<p>Elai loves cooking from pastries to commercial menus.</p>
+								<ul class="social">
+									<li class="facebook"><a href="https://www.facebook.com/elai.culaste">Facebook</a></li>
+									<li class="twitter"><a href="http://twitter.com/@shylle_endz">Twitter</a></li>
+									
+								</ul>
 							</li>
 						</ul>
 					</div>
 
-					<div class="block" id="technology">
-						<h2 class="heading"><span class="center"><strong>Technology</strong></span></h2>
-						<p class="small">We use cutting-edge technologies.</p>
 
-						<ul class="features">
-							<li>
-								<div><img src="{{ MEDIA_URL }}/img/python.png"></div>
-								<p>
-								
-								</p>
-							</li>
-							<li>
-								<div><img src="{{ MEDIA_URL }}/img/django.png"></div>
-								<p>
-									
-								</p>
-							</li>
-							<li>
-								<div><img src="{{ MEDIA_URL }}/img/jquery.png"></span></div>
-								<p>
-									
-								</p>
-							</li>
-							<li>
-								<div ><img src="{{ MEDIA_URL }}/img/html5.png"></span></div>
-								<p>
-									
-								</p>
-							</li>
-							<li>
-								<div><img src="{{ MEDIA_URL }}/img/mysql.png"></span></div>
-								<p>
-									
-								</p>
-							</li>
-							<li>
-								<div><img src="{{ MEDIA_URL }}/img/github.png"></span></div>
-								<p>
-									
-								</p>
-							</li>
-														
-						</ul>
-					</div>
-					
 					<div class="block" id="contact">
 						<h2 class="heading"><span class="center"><strong>Contact Us</strong></span></h2>
-						<p>Send us a message about anything, it is all fully encrypted. If you leave an email address or phone number We'll respond to you as soon as possible.</p>
+						<p>Send us a message about your needs, it is all fully encrypted. If you leave an email address or phone number we'll respond to you as soon as possible.</p>
 						<form class="contact" id="contact" action="{% url home %}" method="post">{% csrf_token %}
+
 							
 								<div class="form">
+{{ form }}
 									<textarea name="message" placeholder="Type your email address and message" id="contactmessage"></textarea>
 									<button>Contact</button>
 								</div>
@@ -184,7 +162,7 @@ create music videos and direct a film, walking with his dogs in the morning and 
 										</address>
 									</li>
 									<li class="phone"><span>Phone:</span> (035) 422-8203</li>
-									<li class="email"><span>Email:</span> <a href="mailto:arbin@pysoldev.com">arbin@pysoldev.com</a></li>
+									<li class="email"><span>Email:</span> <a href="mailto:arbin@pysoldev.com">info@pysoldev.com</a></li>
 									<li class="map">
 										<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.ph/maps?hl=en&amp;q=dumaguete+city&amp;ie=UTF8&amp;hq=&amp;hnear=City+of+Dumaguete,+Negros+Oriental,+Central+Visayas&amp;gl=ph&amp;t=m&amp;z=13&amp;ll=9.295552,123.281494&amp;output=embed"></iframe>
 									</li>
@@ -193,5 +171,18 @@ create music videos and direct a film, walking with his dogs in the morning and 
 					</div>
 
 				</div>
+
+<script type="text/javascript">
+$('.js-captcha-refresh').click(function(){
+    $form = $(this).parents('form');
+
+    $.getJSON($(this).data('url'), {}, function(json) {
+        // This your should update captcha image src and captcha hidden input
+    });
+
+    return false;
+});
+</script>
+
 {% endblock %}
 				
